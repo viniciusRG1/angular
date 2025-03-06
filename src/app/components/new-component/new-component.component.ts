@@ -5,8 +5,6 @@ import { CommonModule } from '@angular/common';
   selector: 'app-new-component',
   imports: [CommonModule],
   templateUrl: './new-component.component.html',
-  styleUrl: './new-component.component.scss'
+  styleUrl: './new-component.component.scss',
 })
-export class NewComponentComponent {
-
-}
+export class NewComponentComponent{}
