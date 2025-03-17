@@ -7,4 +7,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './new-component.component.html',
   styleUrl: './new-component.component.scss',
 })
-export class NewComponentComponent{}
+export class NewComponentComponent{
+  public name = "churras"
+}

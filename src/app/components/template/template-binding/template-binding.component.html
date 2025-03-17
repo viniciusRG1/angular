@@ -2,5 +2,46 @@
   <h1 >curso de angular</h1>
   {{name}}
   {{age}}
-  <p> sua idade da aqui 10 anos será {{sum(24, 10)}}</p>
+  <button [disabled]="isDabled">pipi</button>
+
 </div>
+
+<img [src]="srcValue" alt="name" [title]="name" />
+
+<p [attr.aria-label] = "name">vinicius</p>
+
+<h2>
+  <div >
+  <h1 >Curso de Angular</h1>
+  {{ name | uppercase }}
+  {{ age }}
+
+  <button [disabled]="isDabled">Pipi</button>
+  </div>
+</h2>
+<img [src]="srcValue" alt="name" [title]="name" />
+
+<p [attr.aria-label]="name">Vinicius</p>
+
+<h2>
+  {{ name | titlecase }}
+</h2>
+  <div>
+    <p [attr.aria-label]="name" [attr.title]="name">Cazé </p>
+    <p [class.background-red]="age >=20">{{name}}</p>
+  </div>
+
+<p [style.text-decoration]="isTextDecoration">{{age}}</p>
+
+<button (click)="sum()">+</button>
+<input (keydown.shift.t)="onKeyDown($event)" />
+
+<div style="background: red; width: 30px; height: 30px; margin-top: 10px;" (mousemove)="onMouseEvent($event)"></div>
+
+<h3>two-way binding</h3>
+<input [(ngModel)]="name"/>
+
+<h3>diretiva de atributos</h3>
+<div [ngClass]="{'background-blue':true}">classe condicional</div>
+
+<div [ngStyle]="{color: age < 35 ? 'green' : 'red'}">olá</div>

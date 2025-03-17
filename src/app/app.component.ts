@@ -1,3 +1,4 @@
+import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -7,7 +8,7 @@ import { TemplateBindingComponent } from './components/template/template-binding
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule,NewComponentComponent, TemplateBindingComponent],
+  imports: [RouterOutlet, CommonModule,NewComponentComponent, TemplateBindingComponent,TemplateVariablesComponent],
   styleUrls:['../styles.scss'],
   styles:[`h1{color:purple;}`],
   template: `<!--<router-outlet></router-outlet>-->
@@ -16,6 +17,7 @@ import { TemplateBindingComponent } from './components/template/template-binding
     <div class="theme-dark">
       <h1>curso de angular</h1>
       <app-new-component></app-new-component>
+      <app-template-variables></app-template-variables>
   </div>
   `,
 })
